@@ -170,7 +170,7 @@
         const $ = root.jQuery;
         $.fn.lazyload = function (options) {
             options = options || {};
-            options.attribute = options.attribute || "data-src";
+            options.attribute = options.attribute || "data-original";
             new LazyLoad($.makeArray(this), options);
             return this;
         };
